@@ -1,0 +1,10 @@
+etablissement_id,nom,region
+CHU-FES-01,CHU Hassan II Fès,region_fes
+HOP-FES-02,Hôpital Al Ghassani Fès,region_fes
+HOP-FES-03,Hôpital Ibn Baja Fès,region_fes
+CHU-RAB-01,CHU Ibn Sina Rabat,region_rabat
+HOP-RAB-02,Hôpital Avicenne Rabat,region_rabat
+HOP-RAB-03,Hôpital Moulay Youssef Rabat,region_rabat
+HOP-TNG-01,Hôpital Mohammed V Tanger,region_tanger
+HOP-TNG-02,Hôpital Duc de Tovar Tanger,region_tanger
+HOP-TNG-03,Hôpital Al Kortobi Tanger,region_tanger
