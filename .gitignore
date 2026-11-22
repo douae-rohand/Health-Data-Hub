@@ -1,5 +1,6 @@
 # Environnements & Secrets
 .env
+.env.g3
 *.env.local
 
 # Python
