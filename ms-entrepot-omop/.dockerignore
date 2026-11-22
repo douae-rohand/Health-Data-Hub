@@ -1,0 +1,4 @@
+.env.g3
+.env.g3.example
+docker-compose.g3.yml
+db
