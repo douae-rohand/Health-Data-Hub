@@ -24,6 +24,13 @@ docker compose -f docker-compose.g3.yml --env-file .env.g3 up --build
 Vérification :
 
 ```bash
+curl http://localhost:8006/health
+```
+
+Sous Windows (PowerShell), utiliser `Copy-Item` à la place de `cp` et `curl.exe` à la place de `curl` :
+
+```powershell
+Copy-Item .env.g3.example .env.g3
 curl.exe http://localhost:8006/health
 ```
 
