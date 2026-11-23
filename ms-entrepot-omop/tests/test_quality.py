@@ -13,8 +13,8 @@ S = "pg_temp"
 @pytest.fixture
 def conn():
     c = psycopg.connect(TEST_DB, autocommit=True)
-    c.execute("CREATE TEMP TABLE person (person_id int, pseudonyme text, gender_concept_id int)")
-    c.execute("CREATE TEMP TABLE visit_occurrence (visit_occurrence_id int, visit_start_date date, visit_end_date date)")
+    c.execute("CREATE TEMP TABLE person (person_id int, person_source_value text, gender_concept_id int)")
+    c.execute("CREATE TEMP TABLE visit_occurrence (visit_occurrence_id int, visit_start_datetime timestamptz, visit_end_datetime timestamptz)")
     c.execute("CREATE TEMP TABLE condition_occurrence (condition_occurrence_id int, condition_concept_id int)")
     c.execute("CREATE TEMP TABLE measurement (measurement_id int, measurement_concept_id int, value_as_number numeric)")
     yield c

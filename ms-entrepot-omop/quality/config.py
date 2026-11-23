@@ -2,15 +2,15 @@ REGIONS = ["region_fes", "region_rabat", "region_tanger"]
 OMOP_TABLES = ["person", "visit_occurrence", "condition_occurrence",
                "measurement", "drug_exposure"]
 
-# --- Noms PROVISOIRES : à confirmer avec Dev 3 ---
-PERSON_PSEUDO = "pseudonyme"
+# --- Noms de colonnes confirmés par db/init/00_schema_omop.sql ---
+PERSON_PSEUDO = "person_source_value"
 PERSON_SEX = "gender_concept_id"
-VISIT_START = "visit_start_date"
-VISIT_END = "visit_end_date"
+VISIT_START = "visit_start_datetime"
+VISIT_END = "visit_end_datetime"
 CONDITION_CONCEPT = "condition_concept_id"
 MEASURE_CONCEPT = "measurement_concept_id"
 MEASURE_VALUE = "value_as_number"
-HBA1C_CONCEPT_ID = 3004410  # provisoire
+HBA1C_CONCEPT_ID = 3004410  # confirmé par app/mapping_codes.py (LOINC 4548-4)
 
 # Codes de sexe : valeurs communes du guide (section 4)
 VALID_SEX_CODES = [8507, 8532]
