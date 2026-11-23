@@ -1,8 +1,10 @@
 from fastapi import FastAPI
+from routers.quality import router as quality_router
 
 from app.routes_ingest import router as ingest_router
 
 app = FastAPI(title="ms-entrepot-omop")
+app.include_router(quality_router)
 
 
 @app.get("/health")
