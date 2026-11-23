@@ -24,3 +24,5 @@ target/
 .idea/
 .DS_Store
 Thumbs.db
+
+ms-entrepot-omop/data/generated/
